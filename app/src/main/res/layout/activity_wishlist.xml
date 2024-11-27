@@ -5,7 +5,7 @@
   android:id="@+id/main"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".activity.wishlist.WishlistActivity">
+  tools:context="lms.mobile.vindme.activity.activity.wishlist.WishlistActivity">
 
   <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bottomNav"
@@ -19,6 +19,6 @@
     app:layout_constraintStart_toStartOf="parent"
     app:menu="@menu/bottom_naw"
     android:background="@color/white"
-    app:itemIconTint="#A04747" />
+    app:itemIconTint="@color/brown" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
