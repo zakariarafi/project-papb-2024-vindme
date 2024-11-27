@@ -2,24 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/main"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".activity.profile.ProfileActivity">
+  tools:context=".activity.home.HomeFragment">
 
-  <com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottomNav"
+  <!--   TODO: Update blank fragment layout -->
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvHome"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:elevation="2dp"
-    app:itemIconSize="30dp"
-    app:itemIconTint="#A04747"
-    app:itemRippleColor="@android:color/transparent"
+    android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintStart_toStartOf="parent"
-    app:menu="@menu/bottom_naw" />
+    app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,32 @@
   android:id="@+id/main"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context="lms.mobile.vindme.activity.activity.cart.CartActivity">
+  tools:context=".activity.cart.CartActivity">
+
+  <TextView
+    android:id="@+id/tvActivity"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="50dp"
+    android:textColor="#A04747"
+    android:textSize="20dp"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="@+id/fragment_container"
+    app:layout_constraintStart_toStartOf="@+id/fragment_container"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvActivity"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"/>
 
   <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bottomNav"
@@ -14,7 +39,7 @@
     android:background="@color/white"
     android:elevation="2dp"
     app:itemIconSize="30dp"
-    app:itemIconTint="@color/brown"
+    app:itemIconTint="#A04747"
     app:itemRippleColor="@android:color/transparent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
